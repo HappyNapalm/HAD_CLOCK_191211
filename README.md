@@ -8,9 +8,9 @@ Clock for HAD Contest
 * Add buttons to program the time
 * Research cap touch
 
-~~ Microcontroller Corrections to PIC18F45K20 ~~
+~~Microcontroller Corrections to PIC18F45K20~~
 
-~~ Consider making a version for the LPC804 as well as the PIC ~~
+~~Consider making a version for the LPC804 as well as the PIC~~
 
 ## Parts to Select ##
 * Shift Register (Affects resistor size)
