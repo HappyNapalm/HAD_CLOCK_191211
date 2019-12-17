@@ -19,93 +19,65 @@ L Device:Transformer_1P_1S T1
 U 1 1 5DF1BF2D
 P 2100 1250
 F 0 "T1" H 2100 1628 50  0000 C CNN
-F 1 "120 to 5" H 2100 1537 50  0000 C CNN
+F 1 "120 to 12" H 2100 1537 50  0000 C CNN
 F 2 "" H 2100 1250 50  0001 C CNN
 F 3 "~" H 2100 1250 50  0001 C CNN
 	1    2100 1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Zener D2
-U 1 1 5DF1C116
-P 3300 1250
-F 0 "D2" V 3254 1329 50  0000 L CNN
-F 1 "D_Zener" V 3345 1329 50  0000 L CNN
-F 2 "" H 3300 1250 50  0001 C CNN
-F 3 "~" H 3300 1250 50  0001 C CNN
-	1    3300 1250
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Small_US R2
 U 1 1 5DF1C1DC
-P 2850 1050
-F 0 "R2" V 2645 1050 50  0000 C CNN
-F 1 "R_Small_US" V 2736 1050 50  0000 C CNN
-F 2 "" H 2850 1050 50  0001 C CNN
-F 3 "~" H 2850 1050 50  0001 C CNN
-	1    2850 1050
+P 3300 1050
+F 0 "R2" V 3095 1050 50  0000 C CNN
+F 1 "R_Small_US" V 3186 1050 50  0000 C CNN
+F 2 "" H 3300 1050 50  0001 C CNN
+F 3 "~" H 3300 1050 50  0001 C CNN
+	1    3300 1050
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R3
 U 1 1 5DF1C2BA
-P 3750 1250
-F 0 "R3" H 3682 1204 50  0000 R CNN
-F 1 "R_Small_US" H 3682 1295 50  0000 R CNN
-F 2 "" H 3750 1250 50  0001 C CNN
-F 3 "~" H 3750 1250 50  0001 C CNN
-	1    3750 1250
+P 4200 1250
+F 0 "R3" H 4132 1204 50  0000 R CNN
+F 1 "R_Small_US" H 4132 1295 50  0000 R CNN
+F 2 "" H 4200 1250 50  0001 C CNN
+F 3 "~" H 4200 1250 50  0001 C CNN
+	1    4200 1250
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 5DF1C4C1
-P 2650 1150
-F 0 "C1" H 2742 1196 50  0000 L CNN
-F 1 "C_Small" H 2742 1105 50  0000 L CNN
-F 2 "" H 2650 1150 50  0001 C CNN
-F 3 "~" H 2650 1150 50  0001 C CNN
-	1    2650 1150
+P 3100 1250
+F 0 "C1" H 3192 1296 50  0000 L CNN
+F 1 "C_Small" H 3192 1205 50  0000 L CNN
+F 2 "" H 3100 1250 50  0001 C CNN
+F 3 "~" H 3100 1250 50  0001 C CNN
+	1    3100 1250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small_US R1
-U 1 1 5DF1C5AB
-P 2650 1350
-F 0 "R1" H 2500 1300 50  0000 C CNN
-F 1 "R_Small_US" H 2350 1400 50  0000 C CNN
-F 2 "" H 2650 1350 50  0001 C CNN
-F 3 "~" H 2650 1350 50  0001 C CNN
-	1    2650 1350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	2500 1050 2650 1050
+	2950 1050 3100 1050
 Wire Wire Line
-	2650 1050 2750 1050
-Connection ~ 2650 1050
+	3100 1050 3200 1050
 Wire Wire Line
-	2950 1050 3300 1050
+	3400 1050 3750 1050
 Wire Wire Line
-	3300 1050 3300 1100
+	3750 1050 3750 1100
 Wire Wire Line
-	3300 1050 3750 1050
+	3750 1050 4200 1050
 Wire Wire Line
-	3750 1050 3750 1150
-Connection ~ 3300 1050
+	4200 1050 4200 1150
+Connection ~ 3750 1050
 Wire Wire Line
-	2500 1450 2650 1450
+	3750 1450 3750 1400
 Wire Wire Line
-	2650 1450 3300 1450
+	3750 1450 4200 1450
 Wire Wire Line
-	3300 1450 3300 1400
-Connection ~ 2650 1450
-Wire Wire Line
-	3300 1450 3750 1450
-Wire Wire Line
-	3750 1450 3750 1350
-Connection ~ 3300 1450
+	4200 1450 4200 1350
+Connection ~ 3750 1450
 $Comp
 L Connector:Conn_WallPlug P1
 U 1 1 5DF1CC0A
@@ -132,20 +104,20 @@ Wire Wire Line
 $Comp
 L Device:D_Bridge_+-AA D1
 U 1 1 5DF1D760
-P 1800 2000
-F 0 "D1" H 2141 2046 50  0000 L CNN
-F 1 "D_Bridge_+-AA" H 2141 1955 50  0000 L CNN
-F 2 "" H 1800 2000 50  0001 C CNN
-F 3 "~" H 1800 2000 50  0001 C CNN
-	1    1800 2000
-	1    0    0    -1  
+P 2300 2200
+F 0 "D1" V 2700 2200 50  0000 L CNN
+F 1 "D_Bridge_+-AA" V 1900 1950 50  0000 L CNN
+F 2 "" H 2300 2200 50  0001 C CNN
+F 3 "~" H 2300 2200 50  0001 C CNN
+	1    2300 2200
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Regulator_Linear:AP2204R-3.3 U7
 U 1 1 5DF1DA4A
 P 3450 2100
 F 0 "U7" H 3450 2342 50  0000 C CNN
-F 1 "AP2204R-3.3" H 3450 2251 50  0000 C CNN
+F 1 "L78L33ABU" H 3450 2251 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3450 2325 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 3450 2100 50  0001 C CNN
 	1    3450 2100
@@ -273,9 +245,9 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" H 1250 69
 	1    0    0    -1  
 $EndComp
 Text Notes 3850 800  0    50   ~ 0
-Clock
+Clock (needs to be 3v3 max for a clock signal)
 Text Notes 3950 1850 0    50   ~ 0
-Regulated Power
+Regulated Power ( Min input voltage 5v3)
 Text Notes 3300 2750 0    50   ~ 0
 Shift Register(open collector)
 $Comp
@@ -1967,18 +1939,18 @@ Wire Wire Line
 	10800 2200 10900 2200
 Wire Wire Line
 	10800 2500 10900 2500
-Text GLabel 7150 1750 0    50   Input ~ 0
+Text GLabel 6900 1750 0    50   Input ~ 0
 SWDIO
-Text GLabel 7150 1650 0    50   Input ~ 0
+Text GLabel 6900 1650 0    50   Input ~ 0
 SWCLK
 Wire Wire Line
-	7150 1650 7250 1650
+	6900 1650 7250 1650
 Wire Wire Line
-	7150 1750 7250 1750
-Text GLabel 7150 1450 0    50   Input ~ 0
+	6900 1750 7250 1750
+Text GLabel 6900 1450 0    50   Input ~ 0
 ~RST
 Wire Wire Line
-	7150 1450 7250 1450
+	6900 1450 7250 1450
 Text GLabel 8350 750  0    50   Input ~ 0
 3v3
 Wire Wire Line
@@ -3107,4 +3079,70 @@ Text GLabel 1800 7200 2    50   Input ~ 0
 M55
 Wire Wire Line
 	1650 7200 1800 7200
+Wire Wire Line
+	2300 1900 2800 1900
+Wire Wire Line
+	2800 1900 2800 2100
+Connection ~ 2800 2100
+Wire Wire Line
+	2300 2500 2800 2500
+Wire Wire Line
+	2800 2500 2800 2400
+Connection ~ 2800 2400
+$Comp
+L Device:D D2
+U 1 1 5E0C20B6
+P 3750 1250
+F 0 "D2" V 3704 1329 50  0000 L CNN
+F 1 "D" V 3795 1329 50  0000 L CNN
+F 2 "" H 3750 1250 50  0001 C CNN
+F 3 "~" H 3750 1250 50  0001 C CNN
+	1    3750 1250
+	0    1    1    0   
+$EndComp
+Text GLabel 7100 1350 0    50   Input ~ 0
+LCS
+Wire Wire Line
+	7100 1350 7250 1350
+$Comp
+L Device:D D75
+U 1 1 5E1E6D4D
+P 2800 1050
+F 0 "D75" H 2800 834 50  0000 C CNN
+F 1 "D" H 2800 925 50  0000 C CNN
+F 2 "" H 2800 1050 50  0001 C CNN
+F 3 "~" H 2800 1050 50  0001 C CNN
+	1    2800 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 1050 2550 1050
+Wire Wire Line
+	2500 1450 2550 1450
+Connection ~ 3100 1050
+Wire Wire Line
+	3100 1050 3100 1150
+Wire Wire Line
+	3100 1350 3100 1450
+Connection ~ 3100 1450
+Wire Wire Line
+	3100 1450 3750 1450
+Text GLabel 2500 650  0    50   Input ~ 0
+VAC_IN_12
+Text GLabel 2500 1600 0    50   Input ~ 0
+VAC_OUT_12
+Wire Wire Line
+	2500 1600 2550 1600
+Wire Wire Line
+	2550 1600 2550 1450
+Connection ~ 2550 1450
+Wire Wire Line
+	2550 1450 3100 1450
+Wire Wire Line
+	2500 650  2550 650 
+Wire Wire Line
+	2550 650  2550 1050
+Connection ~ 2550 1050
+Wire Wire Line
+	2550 1050 2650 1050
 $EndSCHEMATC
