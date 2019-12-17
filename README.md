@@ -17,5 +17,6 @@ Clock for HAD Contest
 * Transformer
 * Zener Diode
 * Full rectifier
+* Resister 0805 100 ohm for 20 mAs at 3v3. 72 resistors
 
 ~~Shift Register (Affects resistor size)~~
