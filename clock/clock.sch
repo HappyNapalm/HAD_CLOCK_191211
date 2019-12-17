@@ -104,12 +104,12 @@ Wire Wire Line
 $Comp
 L Device:D_Bridge_+-AA D1
 U 1 1 5DF1D760
-P 2300 2200
-F 0 "D1" V 2700 2200 50  0000 L CNN
-F 1 "D_Bridge_+-AA" V 1900 1950 50  0000 L CNN
-F 2 "" H 2300 2200 50  0001 C CNN
-F 3 "~" H 2300 2200 50  0001 C CNN
-	1    2300 2200
+P 1950 2200
+F 0 "D1" V 2350 2200 50  0000 L CNN
+F 1 "D_Bridge_+-AA" V 1550 1950 50  0000 L CNN
+F 2 "" H 1950 2200 50  0001 C CNN
+F 3 "~" H 1950 2200 50  0001 C CNN
+	1    1950 2200
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -249,7 +249,7 @@ Clock (needs to be 3v3 max for a clock signal)
 Text Notes 3950 1850 0    50   ~ 0
 Regulated Power ( Min input voltage 5v3)
 Text Notes 3300 2750 0    50   ~ 0
-Shift Register(open collector)
+Shift Register(open collector)\nAddress Pin 10/12 swap between part and symbol
 $Comp
 L MCU_NXP_LPC804:LPC804-TSSOP24 U11
 U 1 1 5DF2D2C1
@@ -3080,12 +3080,8 @@ M55
 Wire Wire Line
 	1650 7200 1800 7200
 Wire Wire Line
-	2300 1900 2800 1900
-Wire Wire Line
 	2800 1900 2800 2100
 Connection ~ 2800 2100
-Wire Wire Line
-	2300 2500 2800 2500
 Wire Wire Line
 	2800 2500 2800 2400
 Connection ~ 2800 2400
@@ -3128,9 +3124,9 @@ Connection ~ 3100 1450
 Wire Wire Line
 	3100 1450 3750 1450
 Text GLabel 2500 650  0    50   Input ~ 0
-VAC_IN_12
+VI_12
 Text GLabel 2500 1600 0    50   Input ~ 0
-VAC_OUT_12
+VO_12
 Wire Wire Line
 	2500 1600 2550 1600
 Wire Wire Line
@@ -3145,4 +3141,66 @@ Wire Wire Line
 Connection ~ 2550 1050
 Wire Wire Line
 	2550 1050 2650 1050
+Text GLabel 2300 2200 2    50   Input ~ 0
+VO_12
+Wire Wire Line
+	2300 2200 2250 2200
+Text GLabel 1600 2200 0    50   Input ~ 0
+VI_12
+Wire Wire Line
+	1600 2200 1650 2200
+Wire Wire Line
+	1950 1900 2800 1900
+Wire Wire Line
+	1950 2500 2800 2500
+Text GLabel 7100 1850 0    50   Input ~ 0
+Output_clock
+Wire Wire Line
+	7100 1850 7250 1850
+Text GLabel 6800 2200 2    50   Input ~ 0
+Output_clock
+Wire Wire Line
+	6800 2200 6650 2200
+Text GLabel 6650 2200 0    50   Input ~ 0
+OCS
+Wire Wire Line
+	850  3500 700  3500
+Text GLabel 700  3500 0    50   Input ~ 0
+OCS
+Wire Wire Line
+	2400 3500 2250 3500
+Text GLabel 2250 3500 0    50   Input ~ 0
+OCS
+Wire Wire Line
+	3950 3500 3800 3500
+Text GLabel 3800 3500 0    50   Input ~ 0
+OCS
+Wire Wire Line
+	3950 5150 3800 5150
+Text GLabel 3800 5150 0    50   Input ~ 0
+OCS
+Wire Wire Line
+	2400 5150 2250 5150
+Text GLabel 2250 5150 0    50   Input ~ 0
+OCS
+Wire Wire Line
+	850  5150 700  5150
+Text GLabel 700  5150 0    50   Input ~ 0
+OCS
+Wire Wire Line
+	850  6800 700  6800
+Text GLabel 700  6800 0    50   Input ~ 0
+OCS
+Wire Wire Line
+	2400 6800 2250 6800
+Text GLabel 2250 6800 0    50   Input ~ 0
+OCS
+Wire Wire Line
+	3950 6800 3800 6800
+Text GLabel 3800 6800 0    50   Input ~ 0
+OCS
+Text GLabel 10050 1250 2    50   Input ~ 0
+~CLR
+Wire Wire Line
+	9650 1250 10050 1250
 $EndSCHEMATC

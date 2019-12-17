@@ -3105,10 +3105,10 @@ LCS
 Wire Wire Line
 	7100 1350 7250 1350
 $Comp
-L Device:D D?
+L Device:D D75
 U 1 1 5E1E6D4D
 P 2800 1050
-F 0 "D?" H 2800 834 50  0000 C CNN
+F 0 "D75" H 2800 834 50  0000 C CNN
 F 1 "D" H 2800 925 50  0000 C CNN
 F 2 "" H 2800 1050 50  0001 C CNN
 F 3 "~" H 2800 1050 50  0001 C CNN
@@ -3116,9 +3116,9 @@ F 3 "~" H 2800 1050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2500 1050 2650 1050
+	2500 1050 2550 1050
 Wire Wire Line
-	2500 1450 3100 1450
+	2500 1450 2550 1450
 Connection ~ 3100 1050
 Wire Wire Line
 	3100 1050 3100 1150
@@ -3127,4 +3127,22 @@ Wire Wire Line
 Connection ~ 3100 1450
 Wire Wire Line
 	3100 1450 3750 1450
+Text GLabel 2500 650  0    50   Input ~ 0
+VAC_IN_12
+Text GLabel 2500 1600 0    50   Input ~ 0
+VAC_OUT_12
+Wire Wire Line
+	2500 1600 2550 1600
+Wire Wire Line
+	2550 1600 2550 1450
+Connection ~ 2550 1450
+Wire Wire Line
+	2550 1450 3100 1450
+Wire Wire Line
+	2500 650  2550 650 
+Wire Wire Line
+	2550 650  2550 1050
+Connection ~ 2550 1050
+Wire Wire Line
+	2550 1050 2650 1050
 $EndSCHEMATC
