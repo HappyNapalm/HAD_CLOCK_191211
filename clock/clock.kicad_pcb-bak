@@ -1568,7 +1568,7 @@
   )
 
   (module LTST-S110KGKT_castellated:LTST-S110KGKT_castellated (layer B.Cu) (tedit 5DF983ED) (tstamp 5E12A2B6)
-    (at 89.2898 50.292)
+    (at 109.5754 68.7324)
     (path /5DF399FA)
     (fp_text reference D67 (at 0 -2.54) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
