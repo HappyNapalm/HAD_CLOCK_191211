@@ -26,3 +26,6 @@ Clock for HAD Contest
 * Non-comericial
 * Unlimited remakes for personal use
 * Cite this project as source for any re-mixes
+
+### Online Resources ###
+https://www.pcbway.com/pcb_prototype/What_are_Plated_Half_Holes_Castellated_Holes_.html
