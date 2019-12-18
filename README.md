@@ -6,6 +6,7 @@ Clock for HAD Contest
 * Design an enclosure
 * Add buttons to program the time (Research cap touch)
 * Convert Mouser Project into csv
+* Redo the outline in 4 x 15 pattern instead of a 3 x 20 pattern
 
 ~~Microcontroller Corrections to PIC18F45K20~~
 
