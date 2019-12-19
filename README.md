@@ -18,7 +18,7 @@ Clock for HAD Contest
 ## Parts to Select ##
 * Transformer
 * Diodes
-* Resister 0805 100 ohm for 20 mAs at 3v3. 72 resistors
+* Resist0r 0603 100 ohm for 20 mAs at 3v3. 72 resistors
 
 ~~Shift Register (Affects resistor size)~~
 
