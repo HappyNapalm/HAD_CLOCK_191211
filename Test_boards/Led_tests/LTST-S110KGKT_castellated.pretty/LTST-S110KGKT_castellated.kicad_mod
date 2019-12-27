@@ -1,0 +1,10 @@
+(module LTST-S110KGKT_castellated (layer F.Cu) (tedit 5DFA5B43)
+  (fp_text reference REF** (at 0 2.8) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value LTST-S110KGKT_castellated (at 0 -2.54) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at -1.65 0 90) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at 1.65 0) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
+)
