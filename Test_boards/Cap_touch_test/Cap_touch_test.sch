@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Cap_touch_test-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -452,4 +453,6 @@ Text GLabel 4350 2250 2    50   Input ~ 0
 CAPT_X3
 Wire Wire Line
 	4350 2250 4150 2250
+Text Notes 2200 3650 0    50   ~ 0
+Note: KiCAD does not have Cap Touch pad support.
 $EndSCHEMATC
