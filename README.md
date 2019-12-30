@@ -34,9 +34,10 @@ https://www.pcbway.com/pcb_prototype/What_are_Plated_Half_Holes_Castellated_Hole
 
 
 ### KiCAD Renders ###
-![Clock Front] (front.png)
 
-![Clock Rear] (rear.png)
+Front | Back
+:-------:|:------:
+![Clock Front] (front.png)  |  ![Clock Rear] (rear.png)
 
 ![LED Test Front] (../renders/01_LED_test/front.png)
 
