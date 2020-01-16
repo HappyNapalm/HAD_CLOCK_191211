@@ -77,7 +77,7 @@ void BOARD_InitPins(void)
     CLOCK_EnableClock(kCLOCK_Iocon);
     /* Enables clock for switch matrix.: enable */
     CLOCK_EnableClock(kCLOCK_Swm);
-
+    /* This is the point that you need to play with. Use the definitions below to reassign the for the demo board *//
     const uint32_t IOCON_INDEX_PIO0_17_config = (/* No addition pin function */
                                                  IOCON_PIO_MODE_INACT |
                                                  /* Enable hysteresis */
