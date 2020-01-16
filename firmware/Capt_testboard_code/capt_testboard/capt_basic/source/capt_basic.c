@@ -43,11 +43,16 @@ volatile bool g_YesTouchFlag;
 void BOARD_InitLED(void)
 {
     GPIO_PortInit(GPIO, 0U);
-    GPIO_PinInit(GPIO, 0U, 20U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});
-    GPIO_PinInit(GPIO, 0U, 18U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});
-    GPIO_PinInit(GPIO, 0U, 15U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});
-    GPIO_PinInit(GPIO, 0U, 8U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});
-    GPIO_PinInit(GPIO, 0U, 9U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});
+    // GPIO_PinInit(GPIO, 0U, 20U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});
+    // GPIO_PinInit(GPIO, 0U, 18U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});
+    // GPIO_PinInit(GPIO, 0U, 15U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});
+    // GPIO_PinInit(GPIO, 0U, 8U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});
+    // GPIO_PinInit(GPIO, 0U, 9U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});
+
+    GPIO_PinInit(GPIO, 0U, 18, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});  //LED 3
+    GPIO_PinInit(GPIO, 0U, 16, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});  //LED 2
+    GPIO_PinInit(GPIO, 0U, 17, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});  //LED 1
+    GPIO_PinInit(GPIO, 0U, 13, &(gpio_pin_config_t){kGPIO_DigitalOutput, 0U});  //LED 0
 }
 
 void BOARD_LED_ON(uint32_t index)
@@ -55,30 +60,34 @@ void BOARD_LED_ON(uint32_t index)
     switch (index)
     {
         case 0U:
-            GPIO_PortClear(GPIO, 0U, 1U << 20U);
+            GPIO_PortClear(GPIO, 0U, 1U << 18);
             break;
         case 1U:
-            GPIO_PortClear(GPIO, 0U, 1U << 18U);
+            GPIO_PortClear(GPIO, 0U, 1U << 16);
             break;
         case 2U:
-            GPIO_PortClear(GPIO, 0U, 1U << 15U);
+            GPIO_PortClear(GPIO, 0U, 1U << 17);
             break;
         case 3U:
-            GPIO_PortClear(GPIO, 0U, 1U << 8U);
+            GPIO_PortClear(GPIO, 0U, 1U << 13);
             break;
-        case 4U:
-            GPIO_PortClear(GPIO, 0U, 1U << 9U);
-            break;
+        // case 4U:
+        //     GPIO_PortClear(GPIO, 0U, 1U << 9U);
+        //     break;
     }
 }
 
 void BOARD_LED_OFF(void)
 {
-    GPIO_PortSet(GPIO, 0U, 1U << 20U);
-    GPIO_PortSet(GPIO, 0U, 1U << 18U);
-    GPIO_PortSet(GPIO, 0U, 1U << 15U);
-    GPIO_PortSet(GPIO, 0U, 1U << 8U);
-    GPIO_PortSet(GPIO, 0U, 1U << 9U);
+    // GPIO_PortSet(GPIO, 0U, 1U << 20U);
+    // GPIO_PortSet(GPIO, 0U, 1U << 18U);
+    // GPIO_PortSet(GPIO, 0U, 1U << 15U);
+    // GPIO_PortSet(GPIO, 0U, 1U << 8U);
+    // GPIO_PortSet(GPIO, 0U, 1U << 9U);
+    GPIO_PortSet(GPIO, 0U, 1U << 18);   //LED3
+    GPIO_PortSet(GPIO, 0U, 1U << 16);   //LED2
+    GPIO_PortSet(GPIO, 0U, 1U << 17);   //LED1
+    GPIO_PortSet(GPIO, 0U, 1U << 13);   //LED0
 }
 
 /*!
