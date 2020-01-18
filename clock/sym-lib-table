@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name MCU_PIC_18F)(type Legacy)(uri /home/church/PCBs/HAD_CLOCK_191211/clock/MCU_PIC_18F.lib)(options "")(descr ""))
+  (lib (name Shift_reg)(type Legacy)(uri /home/church/PCBs/HAD_CLOCK_191211/clock/Shift_reg.lib)(options "")(descr ""))
 )
