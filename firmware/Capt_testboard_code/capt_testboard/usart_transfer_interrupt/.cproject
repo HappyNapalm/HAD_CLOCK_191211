@@ -121,7 +121,7 @@
 							<tool id="com.crt.advproject.gas.exe.debug.1753133284" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug">
 								<option id="com.crt.advproject.gas.thumb.697771622" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.gas.arch.426112245" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm0plus" valueType="enumerated"/>
-								<option id="gnu.both.asm.option.flags.crt.1286234049" superClass="gnu.both.asm.option.flags.crt"/>
+								<option id="gnu.both.asm.option.flags.crt.1286234049" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__REDLIB__" valueType="string"/>
 								<option id="gnu.both.asm.option.include.paths.1071955278" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="../board"/>
 									<listOptionValue builtIn="false" value="../source"/>
@@ -233,7 +233,7 @@
 								<option id="com.crt.advproject.link.gcc.nanofloat.796058691" superClass="com.crt.advproject.link.gcc.nanofloat"/>
 								<option id="com.crt.advproject.link.gcc.nanofloat.scanf.686325629" superClass="com.crt.advproject.link.gcc.nanofloat.scanf"/>
 								<option id="com.crt.advproject.link.toram.1674277823" superClass="com.crt.advproject.link.toram"/>
-								<option id="com.crt.advproject.link.memory.heapAndStack.style.1124352923" superClass="com.crt.advproject.link.memory.heapAndStack.style"/>
+								<option defaultValue="com.crt.advproject.heapAndStack.mcuXpressoStyle" id="com.crt.advproject.link.memory.heapAndStack.style.1124352923" superClass="com.crt.advproject.link.memory.heapAndStack.style" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.stackOffset.337035281" superClass="com.crt.advproject.link.stackOffset"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.133439270" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.multicore.master.1171755210" superClass="com.crt.advproject.link.gcc.multicore.master"/>
@@ -382,7 +382,7 @@
 							<tool id="com.crt.advproject.gas.exe.release.1752003984" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.release">
 								<option id="com.crt.advproject.gas.thumb.813326651" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.gas.arch.1002891734" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm0plus" valueType="enumerated"/>
-								<option id="gnu.both.asm.option.flags.crt.2037745679" superClass="gnu.both.asm.option.flags.crt"/>
+								<option id="gnu.both.asm.option.flags.crt.2037745679" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__REDLIB__" valueType="string"/>
 								<option id="gnu.both.asm.option.include.paths.1337892707" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="../board"/>
 									<listOptionValue builtIn="false" value="../source"/>
@@ -493,7 +493,7 @@
 								<option id="com.crt.advproject.link.gcc.nanofloat.1275611206" superClass="com.crt.advproject.link.gcc.nanofloat"/>
 								<option id="com.crt.advproject.link.gcc.nanofloat.scanf.2011809904" superClass="com.crt.advproject.link.gcc.nanofloat.scanf"/>
 								<option id="com.crt.advproject.link.toram.1677248808" superClass="com.crt.advproject.link.toram"/>
-								<option id="com.crt.advproject.link.memory.heapAndStack.style.1296757867" superClass="com.crt.advproject.link.memory.heapAndStack.style"/>
+								<option defaultValue="com.crt.advproject.heapAndStack.mcuXpressoStyle" id="com.crt.advproject.link.memory.heapAndStack.style.1296757867" superClass="com.crt.advproject.link.memory.heapAndStack.style" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.stackOffset.1521262423" superClass="com.crt.advproject.link.stackOffset"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.47509147" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
 								<option id="com.crt.advproject.link.gcc.multicore.master.415243695" superClass="com.crt.advproject.link.gcc.multicore.master"/>
@@ -600,4 +600,5 @@
 &lt;/infoList&gt;
 &lt;/TargetConfig&gt;</projectStorage>
 	</storageModule>
+	<storageModule moduleId="refreshScope"/>
 </cproject>
