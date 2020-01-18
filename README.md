@@ -2,6 +2,7 @@
 Clock for HAD Contest
 
 ## TODO ##
+* Final verification of footprints. Last time!
 * Sort out transformer
 * Design an enclosure
 * Add buttons to program the time (Research cap touch)

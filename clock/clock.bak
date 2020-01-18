@@ -1883,63 +1883,6 @@ Text GLabel 7000 1250 0    50   Input ~ 0
 GND
 Wire Wire Line
 	7000 1250 7100 1250
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J1
-U 1 1 5E00183C
-P 10500 2300
-F 0 "J1" H 10550 2717 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 10550 2626 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 10500 2300 50  0001 C CNN
-F 3 "~" H 10500 2300 50  0001 C CNN
-	1    10500 2300
-	1    0    0    -1  
-$EndComp
-Text GLabel 10100 2100 0    50   Input ~ 0
-3v3
-Wire Wire Line
-	10100 2100 10300 2100
-Text GLabel 10100 2300 0    50   Input ~ 0
-GND
-Wire Wire Line
-	10300 2200 10150 2200
-Wire Wire Line
-	10150 2200 10150 2300
-Wire Wire Line
-	10150 2300 10100 2300
-Wire Wire Line
-	10300 2300 10150 2300
-Connection ~ 10150 2300
-Wire Wire Line
-	10300 2500 10150 2500
-Wire Wire Line
-	10150 2500 10150 2300
-NoConn ~ 10300 2400
-NoConn ~ 10800 2400
-NoConn ~ 10800 2300
-Text GLabel 10900 2500 2    50   Input ~ 0
-~RST
-Text GLabel 10900 2200 2    50   Input ~ 0
-SWCLK
-Text GLabel 10900 2100 2    50   Input ~ 0
-SWDIO
-Wire Wire Line
-	10800 2100 10900 2100
-Wire Wire Line
-	10800 2200 10900 2200
-Wire Wire Line
-	10800 2500 10900 2500
-Text GLabel 5950 1750 0    50   Input ~ 0
-SWDIO
-Text GLabel 5950 1650 0    50   Input ~ 0
-SWCLK
-Wire Wire Line
-	5950 1650 6300 1650
-Wire Wire Line
-	5950 1750 6300 1750
-Text GLabel 5950 1450 0    50   Input ~ 0
-~RST
-Wire Wire Line
-	5950 1450 6300 1450
 Text GLabel 7000 1350 0    50   Input ~ 0
 3v3
 Wire Wire Line
@@ -3193,12 +3136,12 @@ Text GLabel 9600 2150 2    50   Input ~ 0
 Wire Wire Line
 	9200 2150 9600 2150
 $Comp
-L MCU_PIC_18F:PIC18F45K20_44-PIN_TQFP U?
+L MCU_PIC_18F:PIC18F45K20_44-PIN_TQFP U11
 U 1 1 5E2A03F4
 P 8150 1800
-F 0 "U?" H 8150 3115 50  0000 C CNN
+F 0 "U11" H 8150 3115 50  0000 C CNN
 F 1 "PIC18F45K20_44-PIN_TQFP" H 8150 3024 50  0000 C CNN
-F 2 "" H 8150 1800 50  0001 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 8150 1800 50  0001 C CNN
 F 3 "" H 8150 1800 50  0001 C CNN
 	1    8150 1800
 	1    0    0    -1  
@@ -3211,4 +3154,116 @@ Text GLabel 9300 1250 2    50   Input ~ 0
 3v3
 Wire Wire Line
 	9300 1250 9200 1250
+$Comp
+L Connector:Conn_01x06_Female J1
+U 1 1 5F0042BD
+P 10900 2050
+F 0 "J1" H 10927 2026 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 10927 1935 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10900 2050 50  0001 C CNN
+F 3 "~" H 10900 2050 50  0001 C CNN
+	1    10900 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 10600 2050 0    50   Input ~ 0
+GND
+Wire Wire Line
+	10600 2050 10700 2050
+Text GLabel 10450 1950 0    50   Input ~ 0
+3v3
+Wire Wire Line
+	10450 1950 10550 1950
+Text GLabel 7000 2150 0    50   Input ~ 0
+PGM
+Wire Wire Line
+	7000 2150 7100 2150
+Text GLabel 7000 2250 0    50   Input ~ 0
+PGC
+Wire Wire Line
+	7000 2250 7100 2250
+Text GLabel 7000 2350 0    50   Input ~ 0
+PGD
+Wire Wire Line
+	7000 2350 7100 2350
+Text GLabel 7000 2450 0    50   Input ~ 0
+Vpp
+Wire Wire Line
+	7000 2450 7100 2450
+Text GLabel 10450 1850 0    50   Input ~ 0
+Vpp
+Wire Wire Line
+	10450 1850 10650 1850
+Text GLabel 10600 2350 0    50   Input ~ 0
+PGM
+Wire Wire Line
+	10600 2350 10700 2350
+Text GLabel 10600 2250 0    50   Input ~ 0
+PGC
+Wire Wire Line
+	10600 2250 10700 2250
+Text GLabel 10600 2150 0    50   Input ~ 0
+PGD
+Wire Wire Line
+	10600 2150 10700 2150
+$Comp
+L Device:R_Small_US R1
+U 1 1 5F3D672D
+P 10650 1600
+F 0 "R1" H 10718 1646 50  0000 L CNN
+F 1 "10K" H 10718 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 10650 1600 50  0001 C CNN
+F 3 "~" H 10650 1600 50  0001 C CNN
+	1    10650 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 1700 10650 1850
+Connection ~ 10650 1850
+Wire Wire Line
+	10650 1850 10700 1850
+Wire Wire Line
+	10650 1500 10650 1400
+Wire Wire Line
+	10650 1400 10550 1400
+Wire Wire Line
+	10550 1400 10550 1950
+Connection ~ 10550 1950
+Wire Wire Line
+	10550 1950 10700 1950
+$Comp
+L Device:C_Small C4
+U 1 1 5F53ABE7
+P 5600 1250
+F 0 "C4" H 5692 1296 50  0000 L CNN
+F 1 "0.1uF" H 5692 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5600 1250 50  0001 C CNN
+F 3 "~" H 5600 1250 50  0001 C CNN
+	1    5600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5F53B196
+P 6000 1250
+F 0 "C5" H 6092 1296 50  0000 L CNN
+F 1 "0.1uF" H 6092 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6000 1250 50  0001 C CNN
+F 3 "~" H 6000 1250 50  0001 C CNN
+	1    6000 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 1350 0    50   Input ~ 0
+GND
+Text GLabel 5350 1150 0    50   Input ~ 0
+3v3
+Wire Wire Line
+	5350 1350 5600 1350
+Connection ~ 5600 1350
+Wire Wire Line
+	5600 1350 6000 1350
+Wire Wire Line
+	5350 1150 5600 1150
+Connection ~ 5600 1150
+Wire Wire Line
+	5600 1150 6000 1150
 $EndSCHEMATC
