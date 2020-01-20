@@ -38,7 +38,7 @@ https://www.pcbway.com/pcb_prototype/What_are_Plated_Half_Holes_Castellated_Hole
 
 Front | Back
 :-------:|:------:
-![Clock Front] (front.png)  |  ![Clock Rear] (rear.png)
+![Clock Front] (https://github.com/HappyNapalm/HAD_CLOCK_191211/blob/pic18/front.png)  |  ![Clock Rear] (https://github.com/HappyNapalm/HAD_CLOCK_191211/blob/pic18/rear.png)
 
 ![LED Test Front] (../renders/01_LED_test/front.png)
 
