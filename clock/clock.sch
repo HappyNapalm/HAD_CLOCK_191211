@@ -3327,4 +3327,142 @@ Text GLabel 5050 5900 2    50   Input ~ 0
 SCS
 Wire Wire Line
 	5050 5900 4950 5900
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E2A23A0
+P 5900 2150
+F 0 "SW1" H 5900 2435 50  0000 C CNN
+F 1 "SW_Push" H 5900 2344 50  0000 C CNN
+F 2 "cap_touch_LPC804_NXP:LL3301FF065QJ" H 5900 2350 50  0001 C CNN
+F 3 "" H 5900 2350 50  0001 C CNN
+	1    5900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E2A2778
+P 5900 2500
+F 0 "SW2" H 5900 2785 50  0000 C CNN
+F 1 "SW_Push" H 5900 2694 50  0000 C CNN
+F 2 "cap_touch_LPC804_NXP:LL3301FF065QJ" H 5900 2700 50  0001 C CNN
+F 3 "" H 5900 2700 50  0001 C CNN
+	1    5900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5E2E41F6
+P 5900 2850
+F 0 "SW3" H 5900 3135 50  0000 C CNN
+F 1 "SW_Push" H 5900 3044 50  0000 C CNN
+F 2 "cap_touch_LPC804_NXP:LL3301FF065QJ" H 5900 3050 50  0001 C CNN
+F 3 "" H 5900 3050 50  0001 C CNN
+	1    5900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 5E326030
+P 5200 2350
+F 0 "RN1" V 4783 2350 50  0000 C CNN
+F 1 "R_Pack04" V 4874 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 5475 2350 50  0001 C CNN
+F 3 "~" H 5200 2350 50  0001 C CNN
+	1    5200 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 2250 5550 2250
+Wire Wire Line
+	5550 2250 5550 2150
+Wire Wire Line
+	5550 2150 5700 2150
+Wire Wire Line
+	5600 2350 5600 2500
+Wire Wire Line
+	5600 2500 5700 2500
+Wire Wire Line
+	5400 2350 5450 2350
+Wire Wire Line
+	5550 2450 5550 2850
+Wire Wire Line
+	5550 2850 5700 2850
+Wire Wire Line
+	5400 2450 5550 2450
+Wire Wire Line
+	5000 2150 4900 2150
+Wire Wire Line
+	4900 2150 4900 2250
+Wire Wire Line
+	4900 2250 5000 2250
+Wire Wire Line
+	4900 2250 4900 2350
+Wire Wire Line
+	4900 2350 5000 2350
+Connection ~ 4900 2250
+Wire Wire Line
+	4900 2350 4900 2450
+Wire Wire Line
+	4900 2450 5000 2450
+Connection ~ 4900 2350
+Text GLabel 4800 2150 0    50   Input ~ 0
+3v3
+Wire Wire Line
+	4800 2150 4900 2150
+Text GLabel 6250 2650 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6150 2650 6250 2650
+Wire Wire Line
+	6100 2150 6150 2150
+Wire Wire Line
+	6150 2150 6150 2500
+Wire Wire Line
+	6100 2500 6150 2500
+Connection ~ 6150 2500
+Wire Wire Line
+	6150 2500 6150 2650
+Wire Wire Line
+	6100 2850 6150 2850
+Wire Wire Line
+	6150 2850 6150 2650
+Connection ~ 6150 2650
+Text GLabel 6950 1450 0    50   Input ~ 0
+Alt
+Text GLabel 6950 1550 0    50   Input ~ 0
+Plus
+Text GLabel 6950 1650 0    50   Input ~ 0
+Minus
+Wire Wire Line
+	6950 1450 7100 1450
+Wire Wire Line
+	6950 1550 7100 1550
+Wire Wire Line
+	6950 1650 7100 1650
+Text GLabel 5550 1950 0    50   Input ~ 0
+Alt
+Wire Wire Line
+	5550 1950 5700 1950
+Wire Wire Line
+	5700 1950 5700 2150
+Connection ~ 5700 2150
+Text GLabel 5300 2600 0    50   Input ~ 0
+Plus
+Wire Wire Line
+	5300 2600 5450 2600
+Wire Wire Line
+	5450 2600 5450 2350
+Connection ~ 5450 2350
+Wire Wire Line
+	5450 2350 5600 2350
+Text GLabel 5400 2850 0    50   Input ~ 0
+Minus
+Wire Wire Line
+	5400 2850 5500 2850
+Wire Wire Line
+	5500 2850 5550 2850
+Connection ~ 5500 2850
+Wire Wire Line
+	5500 2850 5550 2850
+Connection ~ 5550 2850
 $EndSCHEMATC
