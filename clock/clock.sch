@@ -3291,4 +3291,44 @@ Text GLabel 3800 3200 0    50   Input ~ 0
 3v3
 Wire Wire Line
 	3800 3200 3950 3200
+Text GLabel 9400 2750 2    50   Input ~ 0
+SCS
+Wire Wire Line
+	9400 2750 9200 2750
+Text GLabel 1800 3800 2    50   Input ~ 0
+SCS
+Wire Wire Line
+	1800 3800 1750 3800
+Text GLabel 3350 3800 2    50   Input ~ 0
+SCS
+Wire Wire Line
+	3350 3800 3250 3800
+Text GLabel 4950 3800 2    50   Input ~ 0
+SCS
+Wire Wire Line
+	4950 3800 4850 3800
+Text GLabel 4950 4850 2    50   Input ~ 0
+SCS
+Wire Wire Line
+	4950 4850 4850 4850
+Text GLabel 3400 4850 2    50   Input ~ 0
+SCS
+Wire Wire Line
+	3400 4850 3300 4850
+Text GLabel 1850 4850 2    50   Input ~ 0
+SCS
+Wire Wire Line
+	1850 4850 1750 4850
+Text GLabel 1900 5900 2    50   Input ~ 0
+SCS
+Wire Wire Line
+	1900 5900 1800 5900
+Text GLabel 3500 5900 2    50   Input ~ 0
+SCS
+Wire Wire Line
+	3500 5900 3400 5900
+Text GLabel 5050 5900 2    50   Input ~ 0
+SCS
+Wire Wire Line
+	5050 5900 4950 5900
 $EndSCHEMATC
