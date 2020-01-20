@@ -2910,7 +2910,7 @@ F 3 "~" H 3750 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 9400 2050 2    50   Input ~ 0
-LCS
+LSC
 Wire Wire Line
 	9400 2050 9200 2050
 $Comp
@@ -3012,10 +3012,8 @@ Wire Wire Line
 	4050 5900 3900 5900
 Text GLabel 3900 5900 0    50   Input ~ 0
 OCS
-Text GLabel 9600 2150 2    50   Input ~ 0
-~CLR
 Wire Wire Line
-	9200 2150 9600 2150
+	9200 2150 9400 2150
 $Comp
 L MCU_PIC_18F:PIC18F45K20_44-PIN_TQFP U11
 U 1 1 5E2A03F4
@@ -3152,10 +3150,8 @@ Power_Clk
 Wire Wire Line
 	4200 1050 4500 1050
 Connection ~ 4200 1050
-Text GLabel 6450 1800 2    50   Input ~ 0
+Text GLabel 9400 2150 2    50   Input ~ 0
 Power_Clk
-Wire Wire Line
-	6150 1800 6450 1800
 $Comp
 L Shift_reg:NPIC6C596A U1
 U 1 1 5E2A4A83
