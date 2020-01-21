@@ -20,7 +20,7 @@ U 1 1 5DF1BF2D
 P 2100 1250
 F 0 "T1" H 2100 1628 50  0000 C CNN
 F 1 "120 to 12" H 2100 1537 50  0000 C CNN
-F 2 "" H 2100 1250 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2100 1250 50  0001 C CNN
 F 3 "~" H 2100 1250 50  0001 C CNN
 	1    2100 1250
 	1    0    0    -1  
@@ -3457,12 +3457,10 @@ Wire Wire Line
 	5450 2350 5600 2350
 Text GLabel 5400 2850 0    50   Input ~ 0
 Minus
-Wire Wire Line
-	5400 2850 5500 2850
-Wire Wire Line
-	5500 2850 5550 2850
 Connection ~ 5500 2850
 Wire Wire Line
 	5500 2850 5550 2850
 Connection ~ 5550 2850
+Wire Wire Line
+	5400 2850 5550 2850
 $EndSCHEMATC
